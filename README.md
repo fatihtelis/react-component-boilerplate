@@ -5,19 +5,30 @@ If you want to create basic React components and publish them into [npm](https:/
 ### How to Install
 
 1. **Clone to repository into your local device**  
-   First of all, you have to clone the repository in your own working environment to get started.  
-   `git clone git@github.com:fatihtelis/react-component-boilerplate.git`  
-   Navigate the root folder of your component (You can rename the folder if you want in these step)  
+   First of all, you have to clone the repository in your own working environment to get started.
+
+   `git clone git@github.com:fatihtelis/react-component-boilerplate.git`
+
+   Navigate the root folder of your component (You can rename the folder if you want in these step)
+
    `cd react-component-boilerplate`
+
 2. **Install packages**  
-   You have to install packages before constructing your component in your root folder.  
-   `npm install`  
-   or  
+   You have to install packages before constructing your component in your root folder.
+
+   `npm install`
+
+   or
+
    `yarn`
+
 3. **Start your development server**  
-   You can see the basic scripts in `packages.json` file. Use the following command to start your development environment;  
-   `npm run start`  
-   or  
+   You can see the basic scripts in `packages.json` file. Use the following command to start your development environment;
+
+   `npm run start`
+
+   or
+
    `yarn start`
 
    After starting navigate through `localhost:3000` from your browser's address bar and start building your component right away.
