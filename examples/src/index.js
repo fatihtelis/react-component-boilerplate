@@ -1,6 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
-import LoremIpsum from '../../src';
+import ReactComponent from '../../src';
+import '../../src/style.scss';
 
-const App = () => <LoremIpsum />;
+const App = () => <ReactComponent />;
 render(<App />, document.getElementById('root'));

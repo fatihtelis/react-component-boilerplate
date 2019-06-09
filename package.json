@@ -1,15 +1,37 @@
 {
-  "name": "npm-boilerplate",
+  "name": "react-component-boilerplate",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A Boilerplate for Publishing Basic React Components to NPM",
+  "main": "dist/index.js",
   "scripts": {
-    "start": "webpack-dev-server --mode development"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --mode development",
+    "transpileJS": "babel src -d dist --no-comments",
+    "transpileSASS": "node-sass --output-style compressed src/style.scss > dist/style.css",
+    "transpile": "npm run transpileJS && npm run transpileSASS",
+    "prepublishOnly": "npm run transpile",
+    "build": "webpack --mode production"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fatihtelis/react-component-boilerplate.git"
+  },
+  "homepage": "https://github.com/fatihtelis/react-component-boilerplate#readme",
+  "bugs": {
+    "url": "https://github.com/fatihtelis/react-component-boilerplate/issues"
+  },
+  "keywords": [
+    "react",
+    "reactjs",
+    "component",
+    "boilerplate",
+    "npm",
+    "publish"
+  ],
+  "author": "Fatih Telis <fatih.telis@gmail.com>",
+  "license": "MIT",
   "devDependencies": {
+    "@babel/cli": "^7.4.4",
     "@babel/core": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
