@@ -18,6 +18,10 @@ module.exports = {
         test: /\.css$/,
         use: ['style-loader', 'css-loader'],
       },
+      {
+        test: /\.scss$/,
+        use: ['style-loader', 'css-loader', 'sass-loader'],
+      },
     ],
   },
   plugins: [htmlWebpackPlugin],
@@ -25,6 +29,6 @@ module.exports = {
     extensions: ['.js', '.jsx'],
   },
   devServer: {
-    port: 3001,
+    port: 3000,
   },
 };
