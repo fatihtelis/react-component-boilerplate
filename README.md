@@ -1,4 +1,4 @@
-# A Boilerplate for Publishing Basic React Components to NPM
+# A Boilerplate for Publishing Basic React Components to npm
 
 If you want to create basic React components and publish them into [npm](https://www.npmjs.com/) as an open source project without spending time on configuration, you can simply follow the steps and publish your own component.
 
@@ -39,6 +39,10 @@ There are 2 folders in the root of the repository, one is `src` and other is `ex
 **src** is the main folder for code belongs to your component.  
 **examples** is the folder for displaying your component as an HTML page in development.
 
+#### Styles
+
+SASS Loader is added to the project as default style loader. You can add your styles on `src/style.scss` file and it will transpile your .scss file into .css when it is published to /dist folder before publishing to npm.
+
 ### Test
 
 Jest and Enzyme is added for testing the component. You can write your own test on component.test.js file and check the results by running the script;
@@ -49,6 +53,8 @@ or
 
 `yarn test`
 
-#### Styles
+### Publishing your React Component to npm
 
-SASS Loader is added to the project as default style loader. You can add your styles on `src/style.scss` file and it will transpile your .scss file into .css when it is published to /dist folder before publishing to npm.
+You have to transpile your code with Babel before publishing it to npm. Transpile script is coverting .js and .scss files and make them compatible with old browsers. **prepublishOnly** script auto-transpile the code before publishing. Last step is to start publishing.
+
+`npm publish`
