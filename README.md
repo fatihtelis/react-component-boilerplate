@@ -73,4 +73,10 @@ or
 
 `yarn publish:gh-pages`
 
-It opens a new branch in your project called 'gh-pages' and publishes your demo.
+It opens a new branch in your project called 'gh-pages' and publishes your demo. You can access your demo link from:
+
+`https://<github-username>.github.io/<github-repo-name>/`
+
+For this repo, the demo is available at:
+
+[https://fatihtelis.github.io/react-component-boilerplate/](https://fatihtelis.github.io/react-component-boilerplate/)
