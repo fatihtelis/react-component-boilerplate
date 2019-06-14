@@ -65,7 +65,7 @@ After signing in, you are ready for the last step.
 
 ## Deploy your React Component Example to GitHub Pages
 
-[Github Pages](https://pages.github.com/) offers developers to deploy their open source project demos into their directory. You can use the following scripts to deploy your demos into Github Pages.
+[GitHub Pages](https://pages.github.com/) offers developers to deploy their open source project demos into their directory. You can use the following scripts to deploy your demos into Github Pages.
 
 `npm run publish:gh-pages`
 
