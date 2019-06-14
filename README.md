@@ -6,7 +6,7 @@ If you want to create basic React components and publish them into [npm](https:/
 - [How to Use](#how-to-use)
 - [Component Test](#component-test)
 - [Publishing your React Component to npm](#publishing-your-react-component-to-npm)
-- [Deploy your React Component Example to GitHub Pages](#deploy-your-react-component-example-to-github-pages)
+- [Deploy your React Component Demo to GitHub Pages](#deploy-your-react-component-demo-to-github-pages)
 - [Auto-deploy to Github Pages with Travis CI](#auto-deploy-to-github-pages-with-travis-ci)
 
 ## How to Install
@@ -73,7 +73,7 @@ After signing in, you are ready for the last step.
 
 `npm publish`
 
-## Deploy your React Component Example to GitHub Pages
+## Deploy your React Component Demo to GitHub Pages
 
 [GitHub Pages](https://pages.github.com/) offers developers to deploy their open source project demos into their directory. You can use the following scripts to deploy your demos into Github Pages.
 
