@@ -23,7 +23,7 @@ If you want to create basic React components and publish them into [npm](https:/
 
    Don't forget to remove .git folder and init your own git config.
 
-   `rm -rf .git`
+   `rm -rf .git`  
    `git init`
 
 2. **Install packages**
