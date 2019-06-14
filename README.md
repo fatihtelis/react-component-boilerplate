@@ -2,6 +2,12 @@
 
 If you want to create basic React components and publish them into [npm](https://www.npmjs.com/) as an open source project without spending time on configuration, you can simply follow the steps and publish your own component.
 
+- [How to Install](#how-to-install)
+- [How to Install](#how-to-use)
+- [Component Test](#component-test)
+- [Publishing your React Component to npm](#publishing-your-react-component-to-npm)
+- [Deploy your React Component Example to GitHub Pages](#deploy-your-react-component-example-to-github-pages)
+
 ## How to Install
 
 1. **Clone to repository into your local device**
@@ -46,7 +52,7 @@ There are 2 folders in the root of the repository, one is `src` and other is `ex
 
 SASS Loader is added to the project as default style loader. You can add your styles on `src/style.scss` file and it will transpile your .scss file into .css when it is published to /dist folder before publishing to npm.
 
-## Test
+## Component Test
 
 [Jest](https://jestjs.io/) and [Enzyme](https://airbnb.io/enzyme/) is added for testing the component. You can write your own test on component.test.js file and check the results by running the script;
 
