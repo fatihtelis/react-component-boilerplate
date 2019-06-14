@@ -2,7 +2,7 @@
 
 If you want to create basic React components and publish them into [npm](https://www.npmjs.com/) as an open source project without spending time on configuration, you can simply follow the steps and publish your own component.
 
-### How to Install
+## How to Install
 
 1. **Clone to repository into your local device**  
    First of all, you have to clone the repository in your own working environment to get started.
@@ -33,7 +33,7 @@ If you want to create basic React components and publish them into [npm](https:/
 
    After starting navigate through `localhost:3000` from your browser's address bar and start building your component right away.
 
-### How to Use
+## How to Use
 
 There are 2 folders in the root of the repository, one is `src` and other is `examples`.  
 **src** is the main folder for code belongs to your component.  
@@ -43,7 +43,7 @@ There are 2 folders in the root of the repository, one is `src` and other is `ex
 
 SASS Loader is added to the project as default style loader. You can add your styles on `src/style.scss` file and it will transpile your .scss file into .css when it is published to /dist folder before publishing to npm.
 
-### Test
+## Test
 
 Jest and Enzyme is added for testing the component. You can write your own test on component.test.js file and check the results by running the script;
 
@@ -53,8 +53,24 @@ or
 
 `yarn test`
 
-### Publishing your React Component to npm
+## Publishing your React Component to npm
 
-You have to transpile your code with Babel before publishing it to npm. Transpile script is coverting .js and .scss files and make them compatible with old browsers. **prepublishOnly** script auto-transpile the code before publishing. Last step is to start publishing.
+You have to transpile your code with Babel before publishing it to npm. **prepublishOnly** script auto-transpile the code before publishing. So, you only need to publish your component to the npm directory. You have to login to your npm account first from terminal first:
+
+`npm login`
+
+After signing in, you are ready for the last step.
 
 `npm publish`
+
+## Deploy your React Component Example to GitHub Pages
+
+[Github Pages](https://pages.github.com/) offers developers to deploy their open source project demos into their directory. You can use the following scripts to deploy your demos into Github Pages.
+
+`npm run publish:gh-pages`
+
+or
+
+`yarn publish:gh-pages`
+
+It opens a new branch in your project called 'gh-pages' and publishes your demo.
