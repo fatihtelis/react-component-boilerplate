@@ -93,6 +93,10 @@ For this repo, the demo is available at:
 
 ## Auto-deploy to Github Pages with Travis CI
 
-If you don't want to update your component demo manually on GitHub Pages by running "publish:gh-pages" script each time you make a change on your repo, you may use [Travis CI](https://travis-ci.org/) integration. `.travis.yml` file includes a configuration to publish your code to GitHub pages. All you need to do is adding a variable called "GITHUB_TOKEN" to Travis CI dashboard from settings of related repo. You can generate the token from GitHub by navigating "Settings > Developer Settings > Personal access tokens". When you push your code to master branch on GitHub, Travis CI will publish your demo on GitHub if the repo is builded successfully and passing tests. For details about Travis CI,
+If you don't want to update your component demo manually on GitHub Pages by running "publish:gh-pages" script each time you make a change on your repo, you may use [Travis CI](https://travis-ci.org/) integration.
+
+`.travis.yml` file includes a configuration to publish your code to GitHub pages. All you need to do is adding a variable called "GITHUB_TOKEN" to Travis CI dashboard from settings of related repo. You can generate the token from GitHub by navigating "Settings > Developer Settings > Personal access tokens".
+
+When you push your code to master branch on GitHub, Travis CI will publish your demo on GitHub Pages if the repo is builded successfully and passing tests. For details about Travis CI, please check:
 
 [Travis CI Docs for GitHub Pages Deployment](https://docs.travis-ci.com/user/deployment/pages/)
