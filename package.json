@@ -12,7 +12,8 @@
     "prepublishOnly": "npm run transpile",
     "build": "webpack --mode production",
     "deploy": "gh-pages -d examples/dist",
-    "publish:gh-pages": "npm run build && npm run deploy"
+    "publish:gh-pages": "npm run build && npm run deploy",
+    "publish:travis": "npm run build"
   },
   "repository": {
     "type": "git",

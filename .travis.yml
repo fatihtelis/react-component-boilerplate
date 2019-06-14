@@ -10,7 +10,7 @@ branches:
 
 install:
   - yarn
-  - yarn publish:gh-pages
+  - yarn publish:travis
 
 script:
   - yarn test
