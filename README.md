@@ -3,7 +3,7 @@
 If you want to create basic React components and publish them into [npm](https://www.npmjs.com/) as an open source project without spending time on configuration, you can simply follow the steps and publish your own component.
 
 - [How to Install](#how-to-install)
-- [How to Install](#how-to-use)
+- [How to Use](#how-to-use)
 - [Component Test](#component-test)
 - [Publishing your React Component to npm](#publishing-your-react-component-to-npm)
 - [Deploy your React Component Example to GitHub Pages](#deploy-your-react-component-example-to-github-pages)
