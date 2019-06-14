@@ -48,7 +48,7 @@ SASS Loader is added to the project as default style loader. You can add your st
 
 ## Test
 
-Jest and Enzyme is added for testing the component. You can write your own test on component.test.js file and check the results by running the script;
+[Jest](https://jestjs.io/) and [Enzyme](https://airbnb.io/enzyme/) is added for testing the component. You can write your own test on component.test.js file and check the results by running the script;
 
 `npm run test`
 
