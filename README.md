@@ -7,6 +7,7 @@ If you want to create basic React components and publish them into [npm](https:/
 - [Component Test](#component-test)
 - [Publishing your React Component to npm](#publishing-your-react-component-to-npm)
 - [Deploy your React Component Example to GitHub Pages](#deploy-your-react-component-example-to-github-pages)
+- [Auto-deploy to Github Pages with Travis CI](#auto-deploy-to-github-pages-with-travis-ci)
 
 ## How to Install
 
@@ -89,3 +90,9 @@ It opens a new branch in your project called 'gh-pages' and publishes your demo.
 For this repo, the demo is available at:
 
 [https://fatihtelis.github.io/react-component-boilerplate/](https://fatihtelis.github.io/react-component-boilerplate/)
+
+## Auto-deploy to Github Pages with Travis CI
+
+If you don't want to update your component demo manually on GitHub Pages by running "publish:gh-pages" script each time you make a change on your repo, you may use [Travis CI](https://travis-ci.org/) integration. `.travis.yml` file includes a configuration to publish your code to GitHub pages. All you need to do is adding a variable called "GITHUB_TOKEN" to Travis CI dashboard from settings of related repo. You can generate the token from GitHub by navigating "Settings > Developer Settings > Personal access tokens". When you push your code to master branch on GitHub, Travis CI will publish your demo on GitHub if the repo is builded successfully and passing tests. For details about Travis CI,
+
+[Travis CI Docs for GitHub Pages Deployment](https://docs.travis-ci.com/user/deployment/pages/)
