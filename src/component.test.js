@@ -12,7 +12,7 @@ describe('Component', () => {
     expect(wrapper.exists()).toBe(true);
   });
   test('exists with data', () => {
-    const wrapper = shallow(<Component title="React Componenet" />);
+    const wrapper = shallow(<Component text="React Componenet" />);
     expect(wrapper.exists()).toBe(true);
   });
 });
