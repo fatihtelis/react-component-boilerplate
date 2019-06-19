@@ -72,6 +72,10 @@ There are 2 folders in the root of the repository, one is `src` and other is `ex
 
 SASS Loader is added to the project as default style loader. You can add your custom component styles in `src/component.scss` file and it will transpile your .scss file into .css when it is published to /dist folder before publishing to npm. Users can access and import the custom styles by importing;
 
+```bash
+import 'react-component-boilerplate/dist/component.css'
+```
+
 ## Component Test
 
 [Jest](https://jestjs.io/) and [Enzyme](https://airbnb.io/enzyme/) is added for testing the component. You can write your own test on component.test.js file and check the results by running the script;
