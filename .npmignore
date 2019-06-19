@@ -5,3 +5,22 @@ examples
 .gitignore
 webpack.config.js
 .DS_Store
+
+#Folders
+src
+examples
+__mocks__
+
+#Dist
+dist/**/*.test.js
+dist/**/*.scss
+
+#Config files
+.babelrc
+.eslintrc
+.gitignore
+.travis.yml
+webpack.config.js
+
+#Other
+.DS_Store

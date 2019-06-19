@@ -1,0 +1,19 @@
+.component {
+  width: 275px;
+  height: 275px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  text-align: center;
+  font-weight: 300;
+  background: linear-gradient(to right, #f54166, #5d77fd);
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  transition: 0.25s ease-in;
+  &:hover {
+    width: 300px;
+    height: 300px;
+  }
+}

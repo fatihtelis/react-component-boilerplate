@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
 import ReactComponent from '../../src';
-import '../../src/style.scss';
+import './style.scss';
 
 const App = () => <ReactComponent />;
 render(<App />, document.getElementById('root'));
