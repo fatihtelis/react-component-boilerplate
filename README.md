@@ -2,12 +2,15 @@
 
 If you want to create basic React components and publish them into [npm](https://www.npmjs.com/) as an open source project without spending time on configuration, you can simply follow the steps and publish your own component.
 
+**Table of Contents**
+
 - [How to Install](#how-to-install)
 - [How to Use](#how-to-use)
 - [Component Test](#component-test)
 - [Publishing your React Component to npm](#publishing-your-react-component-to-npm)
 - [Deploy your React Component Demo to GitHub Pages](#deploy-your-react-component-demo-to-github-pages)
 - [Auto-deploy to Github Pages with Travis CI](#auto-deploy-to-github-pages-with-travis-ci)
+- [Author](#author)
 
 ## How to Install
 
@@ -76,6 +79,16 @@ SASS Loader is added to the project as default style loader. You can add your cu
 import 'react-component-boilerplate/dist/component.css'
 ```
 
+Or alternatively, you can import this css file from your component directly to make it default. People who use your package do not need to add css file manually by this way. But don't forget, eslint may show you an error since this file is produced after build. So you may disable eslint error for this particular import.
+
+Add these lines to `/src/index.js`;
+
+```js
+// File is created during build phase and placed in dist directory
+// eslint-disable-next-line import/no-unresolved
+import './component.css';
+```
+
 ## Component Test
 
 [Jest](https://jestjs.io/) and [Enzyme](https://airbnb.io/enzyme/) is added for testing the component. You can write your own test on component.test.js file and check the results by running the script;
@@ -135,3 +148,17 @@ If you don't want to update your component demo manually on GitHub Pages by runn
 When you push your code to master branch on GitHub, Travis CI will publish your demo on GitHub Pages if the repo is builded successfully and passing tests. For details about Travis CI, please check:
 
 [Travis CI Docs for GitHub Pages Deployment](https://docs.travis-ci.com/user/deployment/pages/)
+
+## Author
+
+<table>
+  <tr>
+    <td>
+      <img src="https://github.com/fatihtelis.png?s=100" width="100">
+    </td>
+    <td>
+      Fatih Telis<br />      
+      <a href="http://fatihtelis.com" title="Fatih Telis">http://fatihtelis.com</a>
+    </td>
+  </tr>
+</table>
