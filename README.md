@@ -79,7 +79,7 @@ SASS Loader is added to the project as default style loader. You can add your cu
 import 'react-component-boilerplate/dist/component.css'
 ```
 
-Or alternatively, you can import this css file from your component directly to make it default. People who use your package do not need to add css file manually by this way. But don't forget, eslint may show you an error since this file is produced after build. So you may disable eslint error for this particular import.
+Alternatively, you can import this css file from your component directly to make it default. People who use your package do not need to add css file manually by this way. But don't forget, eslint may show you an error since this file is produced after build. So you may disable eslint error for this particular import.
 
 Add these lines to `/src/index.js`;
 
